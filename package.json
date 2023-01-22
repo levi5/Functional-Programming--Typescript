@@ -1,0 +1,19 @@
+{
+  "name": "functional-programming-typescript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./build/main.js",
+    "dev": "npm run build && npm run start",
+    "build": "tsc --lib 'esnext, dom' ./src/main.ts --outDir 'build'",
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
+  },
+  "dependencies": {
+    "typescript": "^4.9.4"
+  },
+  "devDependencies": {
+    "vitest": "^0.25.8"
+  }
+}
